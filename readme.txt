@@ -1,3 +1,3 @@
 Resources followed -
 
-1) youtube - https://www.youtube.com/watch?v=YgYx8Y6Vbck&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd&index=28&ab_channel=Codevolution
+1) youtube - https://www.youtube.com/watch?v=T2sv8jXoP4s&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd&ab_channel=Codevolution

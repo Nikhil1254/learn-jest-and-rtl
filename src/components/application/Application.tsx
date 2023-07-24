@@ -3,7 +3,7 @@ export const Application = () => {
     <>
       <h1>Job Application form</h1>
       <h2>Section 1</h2>
-      <p>All fields are mandatory.</p>
+      <p title="mandatory-info">All fields are mandatory.</p>
       <img src="https://via.placeholder.com/150" alt="a person with laptop" />
       <div data-testid="custom-element">Custom element</div>
       <form>

@@ -18,6 +18,9 @@ describe("Application", () => {
     const paragraphElem = screen.getByText("All fields are mandatory.");
     expect(paragraphElem).toBeInTheDocument();
 
+    const paragraphElem2 = screen.getByTitle("mandatory-info");
+    expect(paragraphElem2).toBeInTheDocument();
+
     const imageElement = screen.getByAltText("a person with laptop");
     expect(imageElement).toBeInTheDocument();
 
@@ -63,5 +66,23 @@ describe("Application", () => {
 
     const submitBtn = screen.getByRole("button");
     expect(submitBtn).toBeInTheDocument();
+  });
+
+  test("using different text match to get elements", () => {
+    render(<Application />);
+
+    // using regex
+    const paragraphElem = screen.getByText(/are mandatory/i);
+    expect(paragraphElem).toBeInTheDocument();
+
+    // using simple string
+    const paragraphElem2 = screen.getByText("all Fields", { exact: false });
+    expect(paragraphElem2).toBeInTheDocument();
+
+    // using custom function - which returns true(match)/false(not-matched)
+    const paragraphElem3 = screen.getByText((content) =>
+      content.endsWith("mandatory.")
+    );
+    expect(paragraphElem3).toBeInTheDocument();
   });
 });
