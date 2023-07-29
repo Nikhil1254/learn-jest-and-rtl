@@ -1,4 +1,4 @@
-import { logRoles, render, screen } from "@testing-library/react";
+import {  render, screen } from "@testing-library/react";
 import Skills from "../components/skills/Skills";
 
 describe("Skills Component", () => {
@@ -48,7 +48,7 @@ describe("Skills Component", () => {
       },
       {
         timeout: 2000,
-      }
+      },
     );
 
     // logRoles(view.container);
